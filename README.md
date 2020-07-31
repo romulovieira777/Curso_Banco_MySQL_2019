@@ -17,6 +17,7 @@
 - Like (Fitrando por Aproximação).
 - % (Caracter Coringa).
 - AND e OR (Operadores Lógicos).
+- Group By (Agrupando Valores)
 - Funções de Agregação.
 - Filtrando Valores Nulos.
 - Update (Atualizar Dados de uma Tabela).
