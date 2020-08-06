@@ -1,0 +1,61 @@
+/* DDL - Data Definition Language */
+
+/* Criando uma Tabela */
+CREATE TABLE PRODUTO (
+	IDPRODUTO INT PRIMARY KEY AUTO_INCREMENT,
+	NOME_PRODUTO VARCHAR(30) NOT NULL,
+	PRECO INT,
+	FRETE FLOAT(10,2) NOT NULL
+);
+
+
+/* Alterando o Nome de uma Coluna - CHANGE */
+ALTER TABLE
+	PRODUTO
+CHANGE
+	PRECO VALOR_UNITARIO INT NOT NULL;
+
+
+/* Alterando o Tipo - MODIFY */
+ALTER TABLE
+	PRODUTO
+MODIFY
+	VALOR_UNITARIO VARCHAR(50) NOT NULL;
+
+
+/* Adicionando Colunas */
+ALTER TABLE
+	PRODUTO
+ADD
+	PESO FLOAT(10,2) NOT NUUL;
+
+
+/* Apagando uma Coluna */
+ALTER TABLE
+	PRODUTO
+DROP COLUMN
+	PESO;
+
+
+/* Adicionando uma Coluna na Ordem Específica */
+ALTER TABLE
+	PRODUTO
+ADD COLUMN
+	PESO FLOAT(10,2) NOT NULL
+AFTER
+	NOME_PRODUTO;
+
+
+/* Apagando uma Coluna */
+ALTER TABLE
+	PRODUTO
+DROP COLUMN
+	PESO;
+
+
+/* Adicionando uma Coluna */
+ALTER TABLE
+	PRODUTO
+ADD COLUMN
+	PESO FLOAT(10,2) NOT NULL
+FIRST;
