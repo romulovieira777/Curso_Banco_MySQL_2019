@@ -28,5 +28,5 @@
 - Dicionário de Dados.
 - Triggers.
 
-Link para o curso:  
+Link para o curso: 
 [Udemy](https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/)
